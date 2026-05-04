@@ -35,7 +35,7 @@ jobs:
             ${{ github.event.issue.body }}
             ---
       - name: Comment results on the issue
-        uses: peter-evans/create-or-update-comment@v4
+        uses: peter-evans/create-or-update-comment@v5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           issue-number: ${{ github.event.issue.number }}
